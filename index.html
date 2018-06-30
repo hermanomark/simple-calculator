@@ -7,41 +7,40 @@
 <body>
   <h1>Calculator</h1>
   
-  <input type="number" id="inputNumber" value="0">
+  <input type="text" id="textInput">
   
   <div>
-  <button>AC</button>
-  <button>/</button>
-  <button>*</button>
+  <button onclick="handlers.clear()">AC</button>
+  <button onclick="handlers.division()">/</button>
+  <button onclick="handlers.multiplication()">*</button>
   </div>
   
   <div>
-    <button>7</button>
-    <button>8</button>
-    <button>9</button>
-    <button>-</button>
+    <button onclick="handlers.seven()">7</button>
+    <button onclick="handlers.eight()">8</button>
+    <button onclick="handlers.nine()">9</button>
+    <button onclick="handlers.subtraction()">-</button>
   </div>
 
   <div>
-    <button>4</button>
-    <button>5</button>
-    <button>6</button>
-    <button>+</button>
+    <button onclick="handlers.four()">4</button>
+    <button onclick="handlers.five()">5</button>
+    <button onclick="handlers.six()">6</button>
+    <button onclick="handlers.addition()">+</button>
   </div>
 
   <div>
-    <button>1</button>
-    <button>2</button>
-    <button>3</button>
+    <button onclick="handlers.one()">1</button>
+    <button onclick="handlers.two()">2</button>
+    <button onclick="handlers.three()">3</button>
   </div>
 
   <div>
-    <button>0</button>
-    <button>.</button>
-    <button>=</button>
+    <button onclick="handlers.zero()">0</button>
+    <button onclick="handlers.point()">.</button>
+    <button onclick="handlers.equal()">=</button>
   </div>
-
+  
   <script src="script.js"></script>
-  
 </body>
 </html>
