@@ -10,42 +10,65 @@
       outline: 1px solid red;
     }*/
     html, body {
-      margin: 0;
-      padding: 0;
+      padding-top: 60px;
+      background-color: #2c2f33;
     }
     table {
       height: 400px;
       width: 300px;
+      background-color: #99aab5;
+      border: 8px solid #99aab5;
     }
-    button, input {
+    .btn {
       height: 100%;
+      border-radius: 0px;
+      /*background-color: #ffffff;*/
+      background-color: lavender;
+      color: #2c2f33;
+      border: 0px;
     }
-  
+    #textInput {
+      height: 100%;
+      font-size: 28px;
+      background-color: #99aab5;
+      border-radius: 0px;
+      border: 0px;
+    }
+    .btn-blue {
+      background-color: #7289da;
+      color: #ffffff;
+    }
+    .btn-gray {
+      background-color: lightgray;
+    }
+    .btn:hover {
+      background-color: #2c2f33;
+    }
+
   </style>
 </head>
 <body class="text-center">
-  <h1>Simple Calculator</h1>
   
   <table class="mx-auto">
   <tr>
-    <td colspan="4"><input type="text" id="textInput" disabled class="form-control text-right" placeholder="0"> </td>
+    <td colspan="4"><input type="text" id="textInput" class="form-control text-right" placeholder="0" disabled></td>
   </tr>
   <tr>
-    <td colspan="2"><button onclick="handlers.clear()" class="btn btn-secondary container-fluid">CE</button></td>
-    <td><button onclick="handlers.division()" class="btn btn-secondary container-fluid">/</button></td>
-    <td><button onclick="handlers.multiplication()" class="btn btn-secondary container-fluid">*</button></td>
+    <td colspan="2"><button onclick="handlers.clear()" class="btn btn-secondary container-fluid btn-blue">CE</button></td>
+    <td><button onclick="handlers.division()" class="btn btn-secondary container-fluid btn-gray">/</button></td>
+    <td><button onclick="handlers.multiplication()" class="btn btn-secondary container-fluid btn-gray">*</button></td>
   </tr>
   <tr>
     <td><button onclick="handlers.seven()" class="btn btn-secondary container-fluid">7</button></td>
     <td><button onclick="handlers.eight()" class="btn btn-secondary container-fluid">8</button></td>
     <td><button onclick="handlers.nine()" class="btn btn-secondary container-fluid">9</button></td>
-    <td><button onclick="handlers.subtraction()" class="btn btn-secondary container-fluid">-</button></td>
+    <td><button onclick="handlers.subtraction()" class="btn btn-secondary container-fluid btn-gray">-</button></td>
   </tr>
   <tr>
     <td><button onclick="handlers.four()" class="btn btn-secondary container-fluid">4</button></td>
     <td><button onclick="handlers.five()" class="btn btn-secondary container-fluid">5</button></td>
     <td><button onclick="handlers.six()" class="btn btn-secondary container-fluid">6</button></td>
-    <td rowspan="2"><button onclick="handlers.addition()" class="btn btn-secondary container-fluid">+</button></td>
+    <td rowspan="2"><button onclick="handlers.addition()" class="btn btn-secondary container-fluid btn-gray">+</button></td>
   </tr>
   <tr>
     <td><button onclick="handlers.one()" class="btn btn-secondary container-fluid">1</button></td>
@@ -55,7 +78,7 @@
   <tr>
     <td colspan="2"><button onclick="handlers.zero()" class="btn btn-secondary container-fluid">0</button></td>
     <td><button onclick="handlers.point()" class="btn btn-secondary container-fluid">.</button></td>
-    <td><button onclick="handlers.equal()" class="btn btn-secondary container-fluid">=</button></td>
+    <td><button onclick="handlers.equal()" class="btn btn-secondary container-fluid btn-blue">=</button></td>
   </tr>
   </table>
 
